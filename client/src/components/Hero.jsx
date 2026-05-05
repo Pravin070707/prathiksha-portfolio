@@ -136,7 +136,7 @@ const Hero = () => {
                       rotate: [0, 180, 360],
                     }}
                     transition={{
-                      duration: 10 + Math.random() * 10,
+                      duration: 20 + Math.random() * 20,
                       repeat: Infinity,
                       ease: "linear"
                     }}
