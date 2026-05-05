@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { FiPenTool as Palette, FiSmartphone as Smartphone, FiZap as Zap } from 'react-icons/fi';
 
 const Hero = () => {
   const [typewriterText, setTypewriterText] = useState("");
@@ -124,35 +125,69 @@ const Hero = () => {
       >
         <div className="glass aspect-video rounded-3xl p-4 shadow-2xl">
           <div className="bg-surface w-full h-full rounded-2xl overflow-hidden flex items-center justify-center">
-              <div className="grid grid-cols-3 gap-4 p-8 w-full h-full">
+              <div className="grid grid-cols-3 gap-4 p-8 w-full h-full relative overflow-hidden">
+                {/* Floating Icons Animation */}
+                {[...Array(6)].map((_, i) => (
+                  <motion.div
+                    key={i}
+                    animate={{
+                      x: [Math.random() * 200, Math.random() * -200, Math.random() * 200],
+                      y: [Math.random() * 100, Math.random() * -100, Math.random() * 100],
+                      rotate: [0, 180, 360],
+                    }}
+                    transition={{
+                      duration: 10 + Math.random() * 10,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                    className="absolute text-accent/20 pointer-events-none z-30"
+                    style={{
+                      left: `${Math.random() * 80}%`,
+                      top: `${Math.random() * 80}%`,
+                    }}
+                  >
+                    {i % 3 === 0 ? <Palette size={24} /> : i % 3 === 1 ? <Smartphone size={24} /> : <Zap size={24} />}
+                  </motion.div>
+                ))}
+
                 {/* Row 1 */}
-                <div className="bg-accent/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2022/10/21/11/47/11-47-11-236_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="UI Design" />
+                <div className="bg-accent/10 border border-white/5 rounded-xl flex items-center justify-center relative overflow-hidden group/item">
+                  <div className="w-1/2 h-1 bg-white/10 rounded-full" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity" />
                 </div>
-                <div className="bg-accent2/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2023/04/27/06/15/06-15-51-645_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="UX Design" />
+                <div className="bg-accent2/10 border border-white/5 rounded-xl flex flex-col gap-2 p-4 justify-center">
+                  <div className="w-full h-1 bg-white/10 rounded-full" />
+                  <div className="w-2/3 h-1 bg-white/10 rounded-full" />
                 </div>
-                <div className="bg-indigo-500/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2022/12/05/10/47/10-47-58-930_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Prototyping" />
+                <div className="bg-indigo-500/10 border border-white/5 rounded-xl flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full border-2 border-white/10 border-dashed animate-spin-slow" />
                 </div>
 
                 {/* Row 2 */}
-                <div className="bg-white/5 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2023/04/28/18/34/18-34-10-554_512.gif" className="w-full h-full object-cover opacity-40 transition-opacity group-hover/item:opacity-80" alt="Web Design" />
+                <div className="bg-white/5 border border-white/5 rounded-xl flex items-center justify-center">
+                   <div className="w-12 h-12 rounded-lg border border-white/10 flex items-center justify-center">
+                      <div className="w-6 h-6 bg-white/5 rounded-sm" />
+                   </div>
                 </div>
-                <div className="bg-accent/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2023/03/24/19/58/19-58-18-971_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Interaction" />
+                <div className="bg-accent/10 border border-white/5 rounded-xl flex items-center justify-center">
+                   <div className="flex gap-1">
+                      {[1,2,3].map(j => <div key={j} className="w-2 h-2 rounded-full bg-white/10" />)}
+                   </div>
                 </div>
-                <div className="bg-accent2/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2023/05/01/18/43/18-43-41-477_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Dashboard" />
+                <div className="bg-accent2/10 border border-white/5 rounded-xl p-4 flex flex-col justify-end">
+                  <div className="w-1/2 h-3 bg-white/5 rounded-full" />
                 </div>
 
                 {/* Row 3 */}
-                <div className="bg-indigo-500/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2023/08/11/21/18/21-18-05-265_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Branding" />
+                <div className="bg-indigo-500/10 border border-white/5 rounded-xl flex items-center justify-center">
+                   <Palette size={20} className="text-white/10" />
                 </div>
-                <div className="col-span-2 bg-white/5 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2023/03/20/19/22/19-22-38-662_512.gif" className="w-full h-full object-cover opacity-40 transition-opacity group-hover/item:opacity-80" alt="Mobile App" />
+                <div className="col-span-2 bg-white/5 border border-white/5 rounded-xl p-6 flex items-center gap-4">
+                   <div className="w-10 h-10 rounded-full bg-white/10" />
+                   <div className="flex-1 space-y-2">
+                      <div className="w-full h-2 bg-white/10 rounded-full" />
+                      <div className="w-2/3 h-2 bg-white/10 rounded-full" />
+                   </div>
                 </div>
               </div>
           </div>
