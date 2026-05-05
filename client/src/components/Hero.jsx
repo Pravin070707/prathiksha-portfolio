@@ -126,19 +126,19 @@ const Hero = () => {
           <div className="bg-surface w-full h-full rounded-2xl overflow-hidden flex items-center justify-center">
               <div className="grid grid-cols-3 gap-4 p-8 w-full h-full">
                 <div className="bg-accent/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://i.pinimg.com/originals/44/76/81/4476816035659850117498020a599b50.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="UI Design" />
+                   <img src="https://cdn.pixabay.com/animation/2022/10/21/11/47/11-47-11-236_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="UI Design" />
                 </div>
                 <div className="bg-accent2/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://i.pinimg.com/originals/e8/ad/01/e8ad01061c28c894819d45a95b871c53.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="UX Design" />
+                   <img src="https://cdn.pixabay.com/animation/2023/04/27/06/15/06-15-51-645_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="UX Design" />
                 </div>
                 <div className="bg-indigo-500/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://i.pinimg.com/originals/60/9a/50/609a50201503ed782161f3a2283e3592.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Prototyping" />
+                   <img src="https://cdn.pixabay.com/animation/2022/12/05/10/47/10-47-58-930_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Prototyping" />
                 </div>
                 <div className="col-span-2 bg-white/5 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://i.pinimg.com/originals/30/0b/40/300b402015a99b45e7f1e78498877592.gif" className="w-full h-full object-cover opacity-40 transition-opacity group-hover/item:opacity-80" alt="Mobile App" />
+                   <img src="https://cdn.pixabay.com/animation/2023/03/20/19/22/19-22-38-662_512.gif" className="w-full h-full object-cover opacity-40 transition-opacity group-hover/item:opacity-80" alt="Mobile App" />
                 </div>
                 <div className="bg-accent/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.dribbble.com/users/1240533/screenshots/15462529/media/014f33b1e065538e7f1d4319409893d5.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Interface" />
+                   <img src="https://cdn.pixabay.com/animation/2023/06/13/15/12/15-12-47-323_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Interface" />
                 </div>
               </div>
           </div>
