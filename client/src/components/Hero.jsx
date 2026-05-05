@@ -125,6 +125,7 @@ const Hero = () => {
         <div className="glass aspect-video rounded-3xl p-4 shadow-2xl">
           <div className="bg-surface w-full h-full rounded-2xl overflow-hidden flex items-center justify-center">
               <div className="grid grid-cols-3 gap-4 p-8 w-full h-full">
+                {/* Row 1 */}
                 <div className="bg-accent/20 rounded-xl overflow-hidden relative group/item">
                    <img src="https://cdn.pixabay.com/animation/2022/10/21/11/47/11-47-11-236_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="UI Design" />
                 </div>
@@ -134,11 +135,24 @@ const Hero = () => {
                 <div className="bg-indigo-500/20 rounded-xl overflow-hidden relative group/item">
                    <img src="https://cdn.pixabay.com/animation/2022/12/05/10/47/10-47-58-930_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Prototyping" />
                 </div>
-                <div className="col-span-2 bg-white/5 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2023/03/20/19/22/19-22-38-662_512.gif" className="w-full h-full object-cover opacity-40 transition-opacity group-hover/item:opacity-80" alt="Mobile App" />
+
+                {/* Row 2 */}
+                <div className="bg-white/5 rounded-xl overflow-hidden relative group/item">
+                   <img src="https://cdn.pixabay.com/animation/2023/04/28/18/34/18-34-10-554_512.gif" className="w-full h-full object-cover opacity-40 transition-opacity group-hover/item:opacity-80" alt="Web Design" />
                 </div>
                 <div className="bg-accent/20 rounded-xl overflow-hidden relative group/item">
-                   <img src="https://cdn.pixabay.com/animation/2023/06/13/15/12/15-12-47-323_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Interface" />
+                   <img src="https://cdn.pixabay.com/animation/2023/03/24/19/58/19-58-18-971_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Interaction" />
+                </div>
+                <div className="bg-accent2/20 rounded-xl overflow-hidden relative group/item">
+                   <img src="https://cdn.pixabay.com/animation/2023/05/01/18/43/18-43-41-477_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Dashboard" />
+                </div>
+
+                {/* Row 3 */}
+                <div className="bg-indigo-500/20 rounded-xl overflow-hidden relative group/item">
+                   <img src="https://cdn.pixabay.com/animation/2023/08/11/21/18/21-18-05-265_512.gif" className="w-full h-full object-cover opacity-60 transition-opacity group-hover/item:opacity-100" alt="Branding" />
+                </div>
+                <div className="col-span-2 bg-white/5 rounded-xl overflow-hidden relative group/item">
+                   <img src="https://cdn.pixabay.com/animation/2023/03/20/19/22/19-22-38-662_512.gif" className="w-full h-full object-cover opacity-40 transition-opacity group-hover/item:opacity-80" alt="Mobile App" />
                 </div>
               </div>
           </div>
